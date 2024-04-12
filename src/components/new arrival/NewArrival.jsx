@@ -26,10 +26,12 @@ const NewArrival = () => {
 
   return (
     <div>
-      <h2 className="flex justify-center px-4 mt-10 font-span text-2xl font-extralight">
-        New Arriavls
-      </h2>
-      <div className="flex justify-center w-32 ml-[610px] h-1 bg-[#785f37] border "></div>
+      <div className=" flex flex-col items-center">
+          <h2 className="px-4 font-span text-2xl font-extralight">
+            New Arrival
+          </h2>
+          <div className="flex w-32 h-1 bg-[#785f37] border "></div>
+        </div>
       <div className="flex gap-10   mt-10 mb-10 ml-64">
         {arrival.map((image, index) => (
           <div className="flex flex-col items-center">

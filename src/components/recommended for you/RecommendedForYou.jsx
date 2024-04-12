@@ -3,37 +3,35 @@ import Card from "../card/Card";
 
 const RecommendedForYou = () => {
   return (
-    <div>
-      <div>
-        <div className=" flex-col">
-          <h2 className="flex justify-center px-4 mt-10 font-span text-2xl font-extralight">
-            Recommended For You
+    <div className="flex justify-center items-center mt-10">
+    <div className=" col-span-1 items-center ">
+      <div className="w-full flex-col justify-center  px-3">
+        <div className=" flex flex-col items-center">
+          <h2 className="px-4 font-span text-2xl font-extralight">
+            Recommended for you
           </h2>
-          <div className="flex justify-center w-60 ml-[555px] h-1 bg-[#785f37] border "></div>
-          <div className="flex justify-center ml-16">
+          <div className="flex w-64 h-1 bg-[#785f37] border "></div>
+        </div>
+        <div className="flex justify-center mt-2">
             <p className="font-para text-2xl text-[#fe861c] my-5 px-10">
               Shirts
             </p>
             <p className="font-para text-2xl text-gray-500 my-5 px-10">
               Cosmetics
             </p>
-            <p className="font-para text-2xl text-gray-500 my-5 px-10 uppercase">
-              Kids Wear
+            <p className="font-para text-xl text-gray-500 my-5 px-5 ">
+              KIDS WEAR
             </p>
           </div>
-        </div>
-        <div className="flex-row justify-center items-center ml-10 ">
-          <div className="flex mx-56">
-            <Card />
-            
-          </div>
-          <div className="flex mx-56">
-            <Card />
-          
-          </div>
-        </div>
+      </div>
+      <div>
+        <Card />
+      </div>
+      <div>
+        <Card />
       </div>
     </div>
+  </div>
   )
 }
 
