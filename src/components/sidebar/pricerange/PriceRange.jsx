@@ -12,7 +12,7 @@ const PriceRange = () => {
         <div class="rnage-slider">
           <div class="progress">
             <input type="range" class="range-min" min="0" max="1500" value="2500" />
-            <input type="range" class="range-max" min="0" max="1500" value="7500" />
+            <input type="range" class="range-max" min="0" max="1500" value="2500" />
           </div>
         </div>
       </div>

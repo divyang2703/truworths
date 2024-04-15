@@ -1,10 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //icons
 import { BsCart2 } from "react-icons/bs";
 import { IoMdHeartEmpty } from "react-icons/io";
 
 const Card = () => {
+  const handleCart = () =>{
+    alert("added to your cart")
+     
+  }
+  const handleWishList = () =>{
+    alert("added to your wishlist!!")
+}
+
+
+
   const shirts = [
     {
       id: 1,
@@ -43,14 +54,18 @@ const Card = () => {
       {shirts.map((shirt) => (
         <div className="">
           <div key={shirt.id} className="relative  border h-60 border-black image-hover overflow-hidden">
+          <Link to='/products_details'>
             <img
               src={shirt.imageUrl}
               alt={shirt.id}
               className=" p-2 w-full h-full object-contain "
             />
+          </Link>
+
+           
             <div className="absolute flex item-hover items-center justify-center w-full">
-              <button className=" w-[50%] h-9 border border-l-white"><BsCart2 color="white" size={30} className="ml-12"/></button>
-              <button className="w-[50%] h-9  border border-r-white"><IoMdHeartEmpty color="white" size={30} className="ml-12"/></button>
+              <button className=" w-[50%] h-9 border border-l-white" onClick={handleCart}><BsCart2 color="white" size={30} className="ml-12" id="cart" /></button>
+              <button className="w-[50%] h-9  border border-r-white"  onClick={handleWishList}><IoMdHeartEmpty color="white" size={30} className="ml-12" id="wishlist"/></button>
             </div>
           </div>
           <div className="">
