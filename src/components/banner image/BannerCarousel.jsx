@@ -1,10 +1,24 @@
 import React from 'react';
-//images
-// import shirt from '../../assets/s-l1600.jpg'
+import Carousel from '../carousel/Carousel';
 const BannerCarousel = () => {
+  let slides = [
+    {
+      id:1,
+      image: require('../../assets/dapper-suits-mannequins-showcase-fine-tailoring-elegance-mens-fashion-boutique.jpg')
+    },
+    {
+      id:2,
+      image: require('../../assets/Girls choosing modern clothes in store flat vector illustration.jpg')
+    },
+    {
+      id:3,
+      image: require('../../assets/2008.i305.021.women clothing store.jpg')
+    },
+
+  ];
   return (
-    <div>
-      <h1>hello world</h1>
+    <div className="w-full pt-11">
+      <Carousel slides={slides} />
     </div>
   );
 };

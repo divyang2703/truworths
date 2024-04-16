@@ -25,25 +25,29 @@ const NewArrival = () => {
   ];
 
   return (
-    <div>
-      <div className=" flex flex-col items-center">
-          <h2 className="px-4 font-span text-2xl font-extralight">
-            New Arrival
-          </h2>
-          <div className="flex w-32 h-1 bg-[#785f37] border "></div>
-        </div>
-      <div className="flex gap-10   mt-10 mb-10 ml-64">
-        {arrival.map((image, index) => (
-          <div className="flex flex-col items-center">
-            <img
-              key={index}
-              src={image.imageUrl}
-              alt={image.title}
-              className="flex justify-center rounded-full w-48 h-48 border border-black object-cover"
-            />
-            <p className="text-sm font-semibold pt-2">{image.title}</p>
+    <div className="flex justify-center items-center mt-10">
+      <div className=" col-span-1 items-center ">
+        <div className="w-full flex-col justify-center  px-3">
+          <div className=" flex flex-col items-center">
+            <h2 className="px-4 font-span text-2xl font-extralight">
+              New Arrival
+            </h2>
+            <div className="flex w-32 h-1 bg-[#785f37] border "></div>
           </div>
-        ))}
+        </div>
+        <div className="flex gap-10   mt-10 mb-10 ml-5">
+          {arrival.map((image, index) => (
+            <div className="flex flex-col items-center">
+              <img
+                key={index}
+                src={image.imageUrl}
+                alt={image.title}
+                className="flex justify-center rounded-full w-48 h-48 border border-black object-cover"
+              />
+              <p className="text-sm font-semibold pt-2">{image.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

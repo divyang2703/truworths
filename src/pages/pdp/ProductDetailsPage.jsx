@@ -6,6 +6,7 @@ import RelatedProducts from "../../components/realated products/RelatedProducts"
 import OtherCustomerRelated from "../../components/customer  related/OtherCustomerRelated";
 import ForYou from "../../components/for you/ForYou";
 import Breadcrumbs from "../../components/breadcrums/BreadCrums";
+import Informaton from "../../components/footer/information/Information";
 
 const ProductDetailsPage = () => {
   return (
@@ -20,6 +21,7 @@ const ProductDetailsPage = () => {
         <OtherCustomerRelated />
         <RelatedProducts />
       </div>
+      <Informaton/>
       <Footer />
     </div>
   );

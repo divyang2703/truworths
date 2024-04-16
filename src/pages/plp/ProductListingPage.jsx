@@ -6,6 +6,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Sorting from "../../components/sorting/Sorting";
 import Breadcrumbs from "../../components/breadcrums/BreadCrums";
+import Informaton from "../../components/footer/information/Information";
 
 const ProductListingPage = () => {
 
@@ -41,6 +42,7 @@ const ProductListingPage = () => {
           <Trendings />
         </div>
       </div>
+      <Informaton/>
       <Footer/>
     </div>
   );

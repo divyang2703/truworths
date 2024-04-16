@@ -27,7 +27,7 @@ const ProdcutsDetails = () => {
             <h2 className="text-xl font-semibold font-para">
               Name of the Product
             </h2>
-            <StarRating rating={4} />
+            <StarRating rating={3.5} />
             </div>
             <div className="flex mt-1">
               <strike className="text-sm">$999</strike>

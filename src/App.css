@@ -11,3 +11,14 @@
   transition: ease-in-out 300ms;
   background-color: #f1902d;
 }
+
+.onHover:hover .instagram{
+  background-color: black;
+  display: block;
+  opacity: .5;
+
+}
+
+.instagram{
+ opacity: 0;
+}

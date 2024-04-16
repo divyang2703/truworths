@@ -9,6 +9,8 @@ import Header from '../../components/header/Header.jsx'
 import Footer from '.././../components/footer/Footer.jsx'
 import BannerCarousel from "../../components/banner image/BannerCarousel.jsx";
 import OfferCard from "../../components/offer card/OfferCard.jsx";
+import Trends from "../../components/trends/Trends.jsx";
+import FullSizeImage from "../../components/full size image/FullSizeImage.jsx";
 
 const HomePage = () => {
   return (
@@ -18,8 +20,10 @@ const HomePage = () => {
       <OfferCard/>
       <FrequentlyViewed/>
       <NewArrival/>
+      <FullSizeImage/>
       <BestSeller/>
       <RecommendedForYou/>
+      <Trends/>
       <Information />
       <Footer/>
   
