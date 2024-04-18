@@ -54,7 +54,7 @@ const Card = () => {
       {shirts.map((shirt) => (
         <div className="">
           <div key={shirt.id} className="relative  border h-60 border-black image-hover overflow-hidden">
-          <Link to='/products_details' target="a">
+          <Link to='/products_details' target="_top">
             <img
               src={shirt.imageUrl}
               alt={shirt.id}
